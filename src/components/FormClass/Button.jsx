@@ -42,7 +42,7 @@ export class Button extends PureComponent {
     render() {
         return <div>
             <p ref={this.myRef}>{this.state.count}</p>
-            <button onClick={() => this.setState({ count: this.state.count + 1 })}>+1</button>
+            <button disabled={this.props.disabled} onClick={() => this.setState({ count: this.state.count + 1 })}>+1</button>
 
         </div>
     }

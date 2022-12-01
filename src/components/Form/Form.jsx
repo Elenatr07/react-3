@@ -8,7 +8,7 @@ export const Form = () => {
     const buttonEl = useRef(null);
 
     const handleChangeCount = useCallback(() => {
-        setCount(count + 1);
+        setCount((prevCount) => prevCount + 1);
     }, [])
     useEffect(() => {
         console.log('ref', buttonEl)
