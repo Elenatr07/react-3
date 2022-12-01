@@ -2,7 +2,7 @@ import { useEffect, useState, memo } from "react"
 
 
 
-export const Child = memo(({ value, changeCount }) => {
+export const Child = memo(() => {
     const [count, setCount] = useState(0);
     console.log('render child')
 
